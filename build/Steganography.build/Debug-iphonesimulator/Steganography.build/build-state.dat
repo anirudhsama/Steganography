@@ -1,0 +1,382 @@
+TSteganography
+v7
+r0
+t325684368.318573
+cCheck dependencies
+cProcessInfoPlistFile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Info.plist" Steganography-Info.plist
+cCompileXIB "/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib"
+cCompileXIB "/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib"
+cProcessPCH /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch.gch Steganography_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch.gch Steganography_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/main.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/SteganographyAppDelegate.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/MyViewController.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/OverlayViewController.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/hideMe.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c" normal i386 c com.apple.compilers.gcc.4_2
+cLd "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography" normal i386
+cGenerateDSYMFile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app.dSYM" "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography"
+cTouch "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
+c000000004CC1222F0000000000010AAC
+t1287725615
+s68268
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.h
+c000000004CC6561F00000000000000CD
+t1288066591
+s205
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004CC6562D000000000009BEC0
+t1288066605
+s638656
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdio.h
+c000000004CB3E48600000000000040AC
+t1286857862
+s16556
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.h
+c000000004DB94E900000000000000922
+t1303989904
+s2338
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioServices.h>
+i<MessageUI/MessageUI.h>
+i"OverlayViewController.h"
+i"hideMe.h"
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m
+c000000004DB9550E0000000000003A8C
+t1303991566
+s14988
+i"MyViewController.h"
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.h
+c000000004D87A4FF00000000000002BD
+t1300735231
+s701
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioServices.h>
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m
+c000000004D875E3B0000000000000C99
+t1300717115
+s3225
+i"OverlayViewController.h"
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.h
+c000000004D86C18F00000000000001CF
+t1300677007
+s463
+i<UIKit/UIKit.h>
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m
+c000000004D86C3820000000000000A32
+t1300677506
+s2610
+i"SteganographyAppDelegate.h"
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c
+c000000004D8AF81C0000000000001BB0
+t1300953116
+s7088
+i"hideMe.h"
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.h
+c000000004D8868EB0000000000000149
+t1300785387
+s329
+i<stdio.h>
+i<string.h>
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/tmyass.png
+c000000004D87363D00000000000003A5
+t1300706877
+s933
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib
+c000000004D8859120000000000010A7B
+t1300781330
+s68219
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib
+c000000004D873C0F0000000000004FE5
+t1300708367
+s20453
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography_Prefix.pch
+c000000004D86B1C600000000000000C3
+t1300672966
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app
+t1303991568
+s272
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app.dSYM
+t1303991568
+s102
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Info.plist
+t1300735831
+s645
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/MainWindow.nib
+t1300781333
+s6051
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/OverlayViewController.nib
+t1300716398
+s987
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/PkgInfo
+t1300735831
+s8
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography
+t1303991568
+s60388
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/tmyass.png
+t1300706973
+s933
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/MyViewController.o
+t1303991568
+s104040
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/OverlayViewController.o
+t1300735831
+s52424
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/Steganography.LinkFileList
+c000000004D87A757000000000000032B
+t1300735831
+s811
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/SteganographyAppDelegate.o
+t1300677507
+s52860
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/hideMe.o
+t1302194163
+s9256
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/main.o
+t1300677086
+s6340
+
+N/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m
+c000000004D86B1C6000000000000016F
+t1300672966
+s367
+i<UIKit/UIKit.h>
+
+N/var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch.gch
+t1300735831
+s2138480
+
+N/var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch.gch
+t1300677086
+s15453392
+
+NSteganography-Info.plist
+c000000004D87607100000000000003B7
+t1300717681
+s951
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies325684368#325684368#0(0"0(0#1#0"8624267776#0"0#
+
+CCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/MyViewController.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s325684368.013610
+e325684368.230510
+r1
+xCompileC
+xbuild/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/MyViewController.o
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m325684368#325684368#0(0"0(0#0#83"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m8644553952#2286"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -include /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.m" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/MyViewController.o"0#
+
+CCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/OverlayViewController.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322428631.189173
+e322428631.319784
+r1
+xCompileC
+xbuild/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/OverlayViewController.o
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m322428631#322428631#0(0"0(0#0#88"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m8700505376#2296"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -include /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/OverlayViewController.m" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/OverlayViewController.o"0#
+
+CCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/SteganographyAppDelegate.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322370307.191034
+e322370307.321629
+r1
+xCompileC
+xbuild/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/SteganographyAppDelegate.o
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m322370307#322370307#0(0"0(0#0#91"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m8590277216#2302"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -include /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/SteganographyAppDelegate.m" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/SteganographyAppDelegate.o"0#
+
+CCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/hideMe.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c" normal i386 c com.apple.compilers.gcc.4_2
+s323886963.339151
+e323886963.652998
+r1
+xCompileC
+xbuild/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/hideMe.o
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c323886963#323886963#0(0"0(0#0#73"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c8622075776#2212"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -include /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/hideMe.c" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/hideMe.o"0#
+
+CCompileC build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/main.o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s322369886.281170
+e322369886.344286
+r1
+xCompileC
+xbuild/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/main.o
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m322369886#322369886#0(0"0(0#0#63"/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m8624348640#2254"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -include /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/main.m" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib"
+s322474132.892363
+e322474133.533703
+r1
+xCompileXIB
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib322474132#322474133#0(0"0(0#0#71"/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib8626762752#636"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/MainWindow.nib" "/Users/faizanaziz/Documents/Xcode Projects/Steganography/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB "/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib"
+s322409198.427930
+e322409198.818985
+r1
+xCompileXIB
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib
+lSLF07#2@36"CompileXIB OverlayViewController.xib322409198#322409198#0(0"0(0#0#82"/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib8682325504#658"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/OverlayViewController.nib" "/Users/faizanaziz/Documents/Xcode Projects/Steganography/OverlayViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/Steganography.app/tmyass.png Classes/tmyass.png
+s322399773.123310
+e322399773.130010
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Steganography.app/tmyass.png
+xClasses/tmyass.png
+lSLF07#2@23"Copy Classes/tmyass.png322399773#322399773#0(0"0(0#0#75"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/tmyass.png8631596672#542"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/tmyass.png" "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app"0#
+
+CGenerateDSYMFile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app.dSYM" "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography"
+s325684368.274758
+e325684368.314487
+r1
+xGenerateDSYMFile
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app.dSYM
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/Steganography.app.dSYM build/Debug-iphonesimulator/Steganography.app/Steganography325684368#325684368#0(0"0(0#0#116"/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography8619458048#461"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography" -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app.dSYM"0#
+
+CLd "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography" normal i386
+s325684368.230612
+e325684368.274658
+r1
+xLd
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography
+xnormal
+xi386
+lSLF07#2@121"Link /Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography325684368#325684368#0(0"0(0#0#0"8643530304#1051"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" -filelist "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Objects-normal/i386/Steganography.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework MessageUI -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Steganography"0#
+
+CProcessInfoPlistFile "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Info.plist" Steganography-Info.plist
+s322428631.088860
+e322428631.096418
+r1
+xProcessInfoPlistFile
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Info.plist
+xSteganography-Info.plist
+lSLF07#2@32"Process Steganography-Info.plist322428631#322428631#0(0"0(0#0#81"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography-Info.plist8688349664#557"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Steganography-Info.plist -genpkginfo "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app/Info.plist"0#
+
+CProcessPCH /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch.gch Steganography_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s322428631.096796
+e322428631.186469
+r1
+xProcessPCH
+x/var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch.gch
+xSteganography_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile Steganography_Prefix.pch322428631#322428631#0(0"0(0#0#81"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography_Prefix.pch8665906880#2066"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography_Prefix.pch" -o /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-acupoicwgusihnhcbywczdwrjhpt/Steganography_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch.gch Steganography_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s322369885.163896
+e322369886.280923
+r1
+xProcessPCH
+x/var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch.gch
+xSteganography_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile Steganography_Prefix.pch322369885#322369886#0(0"0(0#0#81"/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography_Prefix.pch8605009344#2120"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-generated-files.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-own-target-headers.hmap" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-all-target-headers.hmap" -iquote "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/Steganography-project-headers.hmap" "-F/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/include" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources/i386" "-I/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Steganography.build/Debug-iphonesimulator/Steganography.build/DerivedSources" -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/Steganography_Prefix.pch" -o /var/folders/kk/kk487AZSFnSpIu8j+9BzzU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Steganography_Prefix-dekqqzihfvyqfogtvlngnmzanikd/Steganography_Prefix.pch.gch0#
+
+CTouch "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app"
+s325684368.314583
+e325684368.318523
+r1
+xTouch
+x/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app
+lSLF07#2@108"Touch /Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app325684368#325684368#0(0"0(0#0#0"8641147712#324"    cd "/Users/faizanaziz/Documents/Xcode Projects/Steganography"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/faizanaziz/Documents/Xcode Projects/Steganography/build/Debug-iphonesimulator/Steganography.app"0#
+
