@@ -4,6 +4,7 @@
 
 #import "OverlayViewController.h"
 #include "hideMe.h"
+#import "AudioRecorderWrapper.h"
 
 typedef enum{
 	kSourceCamera,
@@ -63,6 +64,8 @@ typedef unsigned long  dword;
 	UITableViewController *tableViewController;
 	UIView *hideView,*lowerView;
 	UIButton *cameraButton;
+	
+	AudioRecorderWrapper *audioRecorder;
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar *myToolbar;
@@ -72,6 +75,8 @@ typedef unsigned long  dword;
 @property (nonatomic, retain) IBOutlet UIButton *cameraButton;
 
 @property (nonatomic, retain) OverlayViewController *overlayViewController;
+
+
 
 // toolbar buttons
 - (IBAction)getSourcePicture:(id)sender;

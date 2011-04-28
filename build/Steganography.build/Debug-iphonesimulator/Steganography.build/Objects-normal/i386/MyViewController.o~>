@@ -1,0 +1,6 @@
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController hideAccept](MyViewController*, objc_selector*)':
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:239: warning: unused variable 'tBuf'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:270: warning: unused variable 'fileName'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController sourceAccept](MyViewController*, objc_selector*)':
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:286: warning: unused variable 'tBuf'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:317: warning: unused variable 'fileName'
