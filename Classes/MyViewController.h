@@ -68,6 +68,9 @@ typedef unsigned long  dword;
 	AudioRecorderWrapper *audioRecorder;
 	BOOL isMail;
 	MFMailComposeViewController *mailController;
+	
+	IBOutlet UIActivityIndicatorView *recordingActivityIndicator;
+	IBOutlet UILabel *recordingLable;
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar *myToolbar;
@@ -75,7 +78,8 @@ typedef unsigned long  dword;
 @property (nonatomic, retain) IBOutlet UITextField *passwordField;
 @property (nonatomic, retain) IBOutlet UIView *hideView,*lowerView;
 @property (nonatomic, retain) IBOutlet UIButton *cameraButton;
-
+@property (nonatomic, retain) IBOutlet UILabel *recordingLable;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *recordingActivityIndicator;
 @property (nonatomic, retain) OverlayViewController *overlayViewController;
 
 

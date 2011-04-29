@@ -3,7 +3,7 @@
 @implementation MyViewController
 
 @synthesize myToolbar, overlayViewController, lsbLabel,passwordField, hideView,lowerView, cameraButton;
-
+@synthesize recordingLable, recordingActivityIndicator;
 
 #pragma mark -
 #pragma mark View Controller
@@ -162,6 +162,8 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	[passwordField release];
     [overlayViewController release];
     [audioRecorder release];
+	[recordingLable release];
+	[recordingActivityIndicator release];
 	[super dealloc];
 }
 
@@ -405,18 +407,26 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 		tableViewController.tableView.dataSource = self;
 		tableViewController.tableView.delegate = self;
-		[self presentModalViewController:tableNavigationController animated:YES];
+		[self presentModalViewController:tableViewController animated:YES];
 		[tableViewController release];
 	}
 	else if([aSourceType isEqualToString:@"Record"] || [aSourceType isEqualToString:@"Stop"]){
 		if([audioRecorder isRecording]){
 			[audioRecorder stopRecording];
+			[recordingLable setHidden:YES];
+			[recordingActivityIndicator setHidden:YES];
+			[recordingActivityIndicator stopAnimating];
 			[hideDataFileName release];
 			hideDataFileName = [[NSString alloc] initWithString:@"recording.mp3"];
 		}
 			
-		else
+		else{
 			[audioRecorder startNewRecordingWithFileName:@"recording.mp3"];
+			[recordingLable setHidden:NO];
+			[recordingActivityIndicator setHidden:NO];
+			[recordingActivityIndicator startAnimating];
+		}
+			
 	}
 	
 }
@@ -470,7 +480,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		
 	}
 	else if(isHide){
-		[tableNavigationController dismissModalViewControllerAnimated:YES];
+		[tableViewController dismissModalViewControllerAnimated:YES];
 		
 		if(coverImgae){
 			UIImage *newImage = [UIImage imageWithContentsOfFile:[documentsDirectory stringByAppendingPathComponent:[tableDataSource objectAtIndex:indexPath.row]]];
@@ -484,7 +494,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		}
 	}
 	else {
-		[tableNavigationController dismissModalViewControllerAnimated:YES];
+		[tableViewController dismissModalViewControllerAnimated:YES];
 		
 		[hideDataFileName release];
 		hideDataFileName = [[NSString alloc] initWithString:[tableDataSource objectAtIndex:indexPath.row]];
