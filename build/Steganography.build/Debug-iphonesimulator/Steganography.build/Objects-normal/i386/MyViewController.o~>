@@ -1,6 +1,15 @@
 /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController hideAccept](MyViewController*, objc_selector*)':
-/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:239: warning: unused variable 'tBuf'
-/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:270: warning: unused variable 'fileName'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:240: warning: unused variable 'tBuf'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:271: warning: unused variable 'fileName'
 /Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController sourceAccept](MyViewController*, objc_selector*)':
-/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:286: warning: unused variable 'tBuf'
-/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:317: warning: unused variable 'fileName'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:287: warning: unused variable 'tBuf'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:318: warning: unused variable 'fileName'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController convert:](MyViewController*, objc_selector*, objc_object*)':
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:345: warning: deprecated conversion from string constant to 'char*'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:346: warning: deprecated conversion from string constant to 'char*'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:361: warning: deprecated conversion from string constant to 'char*'
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController captureData:](MyViewController*, objc_selector*, NSString*)':
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:408: error: 'tableNavigationController' was not declared in this scope
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm: In function 'void -[MyViewController tableView:didSelectRowAtIndexPath:](MyViewController*, objc_selector*, UITableView*, NSIndexPath*)':
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:473: error: 'tableNavigationController' was not declared in this scope
+/Users/faizanaziz/Documents/Xcode Projects/Steganography/Classes/MyViewController.mm:487: error: 'tableNavigationController' was not declared in this scope

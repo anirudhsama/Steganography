@@ -145,6 +145,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	isHide = YES;
 	
 	audioRecorder = [[AudioRecorderWrapper alloc] init];
+	isMail = NO;
 }
 
 - (void)viewDidUnload
@@ -336,7 +337,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 }
 
 - (IBAction)convert:(id)sender{
-	/*int i;
+	int i;
 	if(isHide){
 		char hideName[200], saveName[200],fileName[200], password[100];
 		
@@ -359,50 +360,25 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		
 		filePath("final.", saveName);
 		show(hideName, password, saveName, [lsbLabel.text intValue]);
-	}*/
+	}
 	
-	if([audioRecorder isRecording])
-	   [audioRecorder stopRecording];
-	else
-	   [audioRecorder startNewRecordingWithFileName:@"test.mp3"];
 }
 
 
 - (IBAction)getSourcePicture:(id)sender{
-	
-	
-	
-	
-	
-	MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
-	controller.mailComposeDelegate = self;
-	
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsDirectory = [paths objectAtIndex:0];
-	
-	NSString *tAttachmentFileName;
-	tAttachmentFileName = [[NSString alloc] initWithString:@"imgToHide.bmp"];
-	
-	NSString *tAttachmentPath = [documentsDirectory stringByAppendingPathComponent:tAttachmentFileName];
-	NSData *attachment = [[NSData alloc] initWithContentsOfFile:tAttachmentPath]; 
-	[controller addAttachmentData:attachment mimeType:@"image/bmp" fileName:tAttachmentFileName];
-	[self presentModalViewController:controller animated:YES];
-	[controller release];
-	[attachment release];
-	[tAttachmentFileName release];
-	
-	
-	
-	
-	
-	
-	
-	//coverImgae = YES;
-	//[self captureData:[[sender titleLabel] text]];
+	coverImgae = YES;
+	[self captureData:[[sender titleLabel] text]];
 }
 
 - (IBAction)getHidePicture:(id)sender{
 	coverImgae = NO;
+	
+	NSString *titleText = [[sender titleLabel] text];
+	if([titleText isEqualToString:@"Record"])
+		[sender setTitle:@"Stop" forState:UIControlStateNormal];
+	else if([titleText isEqualToString:@"Stop"])
+		[sender setTitle:@"Record" forState:UIControlStateNormal];
+	
 	[self captureData:[[sender titleLabel] text]];
 }
 
@@ -429,8 +405,18 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 		tableViewController.tableView.dataSource = self;
 		tableViewController.tableView.delegate = self;
-		[self presentModalViewController:tableViewController animated:YES];
+		[self presentModalViewController:tableNavigationController animated:YES];
 		[tableViewController release];
+	}
+	else if([aSourceType isEqualToString:@"Record"] || [aSourceType isEqualToString:@"Stop"]){
+		if([audioRecorder isRecording]){
+			[audioRecorder stopRecording];
+			[hideDataFileName release];
+			hideDataFileName = [[NSString alloc] initWithString:@"recording.mp3"];
+		}
+			
+		else
+			[audioRecorder startNewRecordingWithFileName:@"recording.mp3"];
 	}
 	
 }
@@ -455,14 +441,38 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-	[tableViewController dismissModalViewControllerAnimated:YES];
-	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
 	
-	if(isHide){
-		if(coverImgae){
+	[tableViewController dismissModalViewControllerAnimated:YES];
+	
+	
+	
+	if(isMail){
+		isMail = NO;
+		mailController = [[MFMailComposeViewController alloc] init];
+		mailController.mailComposeDelegate = self;
+		
+		NSString *tAttachmentFileName = [[NSString alloc] initWithString:[tableDataSource objectAtIndex:indexPath.row]];
+		NSString *tAttachmentExtension = [tAttachmentFileName pathExtension];
+		NSString *mimeType = [[NSString alloc] initWithFormat:@"image/%@", tAttachmentExtension];
+		NSString *tAttachmentPath = [documentsDirectory stringByAppendingPathComponent:tAttachmentFileName];
+		NSData *attachment = [[NSData alloc] initWithContentsOfFile:tAttachmentPath]; 
+		[mailController addAttachmentData:attachment mimeType:mimeType fileName:tAttachmentFileName];
+		
+		[NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(presenter) userInfo:nil repeats:NO];
 			
+		[attachment release];
+		[mimeType release];
+		[tAttachmentFileName release];
+		
+		[tableDataSource release];
+		
+	}
+	else if(isHide){
+		[tableNavigationController dismissModalViewControllerAnimated:YES];
+		
+		if(coverImgae){
 			UIImage *newImage = [UIImage imageWithContentsOfFile:[documentsDirectory stringByAppendingPathComponent:[tableDataSource objectAtIndex:indexPath.row]]];
 			[tableDataSource release];
 			[self didTakePicture:newImage];
@@ -474,11 +484,18 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		}
 	}
 	else {
+		[tableNavigationController dismissModalViewControllerAnimated:YES];
+		
 		[hideDataFileName release];
 		hideDataFileName = [[NSString alloc] initWithString:[tableDataSource objectAtIndex:indexPath.row]];
 		[tableDataSource release];
 	}
 
+}
+
+- (void)presenter{
+	[self presentModalViewController:mailController animated:YES];
+	[mailController release];
 }
 
 - (IBAction)segmentMoved:(id)sender{
@@ -506,12 +523,30 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 }
 
 
-#pragma mark mailComposeDelegate
+#pragma mark mail stuff
+- (IBAction)mail:(id)sender{
+	isMail = YES;
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	
+	NSFileManager *defaultManager = [NSFileManager defaultManager];
+	NSArray *fileList = [defaultManager contentsOfDirectoryAtPath:documentsDirectory error:nil];
+	
+	tableDataSource = [fileList retain];
+	
+	tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	tableViewController.tableView.dataSource = self;
+	tableViewController.tableView.delegate = self;
+	[self presentModalViewController:tableViewController animated:YES];
+	[tableViewController release];
+	
+}
+
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
 	NSLog(@"%@", error);
 	NSLog(@"%@", result);
 	[self becomeFirstResponder];
-	[self dismissModalViewControllerAnimated:YES];
+	[mailController dismissModalViewControllerAnimated:YES];
 }
 
 

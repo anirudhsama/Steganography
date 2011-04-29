@@ -66,6 +66,8 @@ typedef unsigned long  dword;
 	UIButton *cameraButton;
 	
 	AudioRecorderWrapper *audioRecorder;
+	BOOL isMail;
+	MFMailComposeViewController *mailController;
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar *myToolbar;
@@ -85,6 +87,8 @@ typedef unsigned long  dword;
 - (IBAction)sliderEnded:(id)sender;
 - (IBAction)convert:(id)sender;
 - (IBAction)segmentMoved:(id)sender;
+
+- (IBAction)mail:(id)sender;
 
 - (void)captureData:(NSString*)aSourceType;
 
