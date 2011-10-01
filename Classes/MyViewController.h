@@ -3,7 +3,7 @@
 #import <MessageUI/MessageUI.h>
 
 #import "OverlayViewController.h"
-#include "hideMe.h"
+#include "BasicImageManipulator.h"
 #import "AudioRecorderWrapper.h"
 
 typedef enum{
@@ -80,13 +80,14 @@ typedef unsigned long  dword;
 @property (nonatomic, retain) IBOutlet UIButton *cameraButton;
 @property (nonatomic, retain) IBOutlet UILabel *recordingLable;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *recordingActivityIndicator;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *mailButton;
 @property (nonatomic, retain) OverlayViewController *overlayViewController;
 
 
 
 // toolbar buttons
 - (IBAction)getSourcePicture:(id)sender;
-- (IBAction)getHidePicture:(id)sender;
+- (IBAction)getDataToHide:(id)sender;
 - (IBAction)sliderMoved:(id)sender;
 - (IBAction)sliderEnded:(id)sender;
 - (IBAction)convert:(id)sender;

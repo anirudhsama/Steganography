@@ -26,7 +26,7 @@
 		508B399D1336F9C700AC631D /* MyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 508B399C1336F9C700AC631D /* MyViewController.mm */; };
 		508B39A21336F9DB00AC631D /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B39A11336F9DB00AC631D /* OverlayViewController.m */; };
 		508B3AA8133772D600AC631D /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508B3AA7133772D600AC631D /* OverlayViewController.xib */; };
-		508B3BDD1337DA7F00AC631D /* hideMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 508B3BDC1337DA7F00AC631D /* hideMe.cpp */; };
+		508B3BDD1337DA7F00AC631D /* BasicImageManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 508B3BDC1337DA7F00AC631D /* BasicImageManipulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +60,8 @@
 		508B39A01336F9DB00AC631D /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		508B39A11336F9DB00AC631D /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		508B3AA7133772D600AC631D /* OverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayViewController.xib; sourceTree = "<group>"; };
-		508B3BDB1337DA7F00AC631D /* hideMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hideMe.h; sourceTree = "<group>"; };
-		508B3BDC1337DA7F00AC631D /* hideMe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hideMe.cpp; sourceTree = "<group>"; };
+		508B3BDB1337DA7F00AC631D /* BasicImageManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicImageManipulator.h; sourceTree = "<group>"; };
+		508B3BDC1337DA7F00AC631D /* BasicImageManipulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicImageManipulator.cpp; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Steganography-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Steganography-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,17 +87,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				500315CD136AD79C008B409A /* Application Delegate */,
+				500315CE136AD811008B409A /* UI */,
 				500312B51369A6E6008B409A /* Audio */,
-				1D3623240D0F684500981E51 /* SteganographyAppDelegate.h */,
-				1D3623250D0F684500981E51 /* SteganographyAppDelegate.m */,
-				500313D11369C79A008B409A /* AudioRecorderWrapper.h */,
-				500313D21369C79A008B409A /* AudioRecorderWrapper.mm */,
-				508B399B1336F9C700AC631D /* MyViewController.h */,
-				508B399C1336F9C700AC631D /* MyViewController.mm */,
-				508B39A01336F9DB00AC631D /* OverlayViewController.h */,
-				508B39A11336F9DB00AC631D /* OverlayViewController.m */,
-				508B3BDB1337DA7F00AC631D /* hideMe.h */,
-				508B3BDC1337DA7F00AC631D /* hideMe.cpp */,
+				500315CF136AD827008B409A /* Basic Image Manipulation */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +152,8 @@
 		500312B51369A6E6008B409A /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				500313D11369C79A008B409A /* AudioRecorderWrapper.h */,
+				500313D21369C79A008B409A /* AudioRecorderWrapper.mm */,
 				500313061369B5FC008B409A /* CADebugMacros.cpp */,
 				500313071369B5FC008B409A /* CADebugMacros.h */,
 				500313081369B5FC008B409A /* CAMath.h */,
@@ -170,6 +165,35 @@
 				500312B71369A6FE008B409A /* AQRecorder.h */,
 			);
 			name = Audio;
+			sourceTree = "<group>";
+		};
+		500315CD136AD79C008B409A /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* SteganographyAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SteganographyAppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		500315CE136AD811008B409A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				508B399B1336F9C700AC631D /* MyViewController.h */,
+				508B399C1336F9C700AC631D /* MyViewController.mm */,
+				508B39A01336F9DB00AC631D /* OverlayViewController.h */,
+				508B39A11336F9DB00AC631D /* OverlayViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		500315CF136AD827008B409A /* Basic Image Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				508B3BDB1337DA7F00AC631D /* BasicImageManipulator.h */,
+				508B3BDC1337DA7F00AC631D /* BasicImageManipulator.cpp */,
+			);
+			name = "Basic Image Manipulation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +261,7 @@
 				1D3623260D0F684500981E51 /* SteganographyAppDelegate.m in Sources */,
 				508B399D1336F9C700AC631D /* MyViewController.mm in Sources */,
 				508B39A21336F9DB00AC631D /* OverlayViewController.m in Sources */,
-				508B3BDD1337DA7F00AC631D /* hideMe.cpp in Sources */,
+				508B3BDD1337DA7F00AC631D /* BasicImageManipulator.cpp in Sources */,
 				500312B81369A6FE008B409A /* AQRecorder.mm in Sources */,
 				500312BD1369AAF1008B409A /* CAStreamBasicDescription.cpp in Sources */,
 				500312BE1369AAF1008B409A /* CAXException.cpp in Sources */,

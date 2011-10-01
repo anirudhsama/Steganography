@@ -58,6 +58,8 @@ enum
             self.imagePickerController.cameraOverlayView = self.view;
         }
     }
+	
+	
 }
 
 // called when the parent application receives a memory warning

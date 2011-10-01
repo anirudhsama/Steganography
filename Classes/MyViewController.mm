@@ -3,7 +3,7 @@
 @implementation MyViewController
 
 @synthesize myToolbar, overlayViewController, lsbLabel,passwordField, hideView,lowerView, cameraButton;
-@synthesize recordingLable, recordingActivityIndicator;
+@synthesize recordingLable, recordingActivityIndicator,mailButton;
 
 #pragma mark -
 #pragma mark View Controller
@@ -61,22 +61,6 @@ void printHeaderDate(bmpfile_header *header1, BITMAPINFOHEADER *header2){
 	printf("Num of colors=%d\n",header2->ncolors);	
 	printf("I colors=%d\n",header2->nimpcolors);
 	printf("----------------------header data--------------------------\n");
-}
-
-void write32bit(FILE *fp, int32_t aData){
-	int16_t tempData1;
-	int32_t tempData;
-	
-	//Store this first
-	tempData = aData&65535;
-	tempData1 = tempData;
-	fwrite(&tempData, sizeof(word), 1, fp);
-	
-	//Store this later
-	tempData = aData>>16;
-	tempData = tempData&65535;
-	tempData1 = tempData;
-	fwrite(&tempData, sizeof(word), 1, fp);
 }
 
 void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2,int16_t *cPallete,UInt8 *imgData){
@@ -164,6 +148,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
     [audioRecorder release];
 	[recordingLable release];
 	[recordingActivityIndicator release];
+	[mailButton release];
 	[super dealloc];
 }
 
@@ -238,15 +223,15 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	CFIndex length = CFDataGetLength(data);
 	
 	int ctr = bpp/8;
-	//UInt8 *buffer = malloc(length*24/bpp);
-	const UInt8 *tBuf = CFDataGetBytePtr(data);
+	UInt8 *buffer = (UInt8*)malloc(length*24/bpp);
+	const UInt8 *tBuf = (UInt8*)CFDataGetBytePtr(data);
 	int j =0;
 	for(int i = 0 ; i < length; i+=ctr){
-		//buffer[j] = tBuf[i];
+		buffer[j] = tBuf[i];
 		j++;
-		//buffer[j] = tBuf[i+1];
+		buffer[j] = tBuf[i+1];
 		j++;
-		//buffer[j] = tBuf[i+2];
+		buffer[j] = tBuf[i+2];
 		j++;
 	}
 	[takenImage release];
@@ -271,10 +256,10 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	header2.width = width;
 	 
 	char fileName[200];
-	//filePath("imgToHide.bmp",fileName);
+	filePath((char*)"imgToHide.bmp",fileName);
 	
-	//writeData(fileName, &header1, &header2, nil, buffer);
-	//free(buffer);
+	writeData(fileName, &header1, &header2, nil, buffer);
+	free(buffer);
 }
 
 - (void)sourceAccept{
@@ -285,15 +270,15 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	CFIndex length = CFDataGetLength(data);
 	
 	int ctr = bpp/8;
-	//sourceBuffer = malloc(length*24/bpp);
-	const UInt8 *tBuf = CFDataGetBytePtr(data);
+	sourceBuffer = (UInt8*) malloc(length*24/bpp);
+	const UInt8 *tBuf = (UInt8*) CFDataGetBytePtr(data);
 	int j =0;
 	for(int i = 0 ; i < length; i+=ctr){
-		//sourceBuffer[j] = tBuf[i];
+		sourceBuffer[j] = tBuf[i];
 		j++;
-		//sourceBuffer[j] = tBuf[i+1];
+		sourceBuffer[j] = tBuf[i+1];
 		j++;
-		//sourceBuffer[j] = tBuf[i+2];
+		sourceBuffer[j] = tBuf[i+2];
 		j++;
 	}
 	[takenImage release];
@@ -318,10 +303,10 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	header2.width = width;
 	 
 	char fileName[200];
-	//filePath("write.bmp", fileName);
+	filePath((char*)"write.bmp", fileName);
 
-	//writeData(fileName, &header1, &header2, nil, sourceBuffer);
-	//free(sourceBuffer);
+	writeData(fileName, &header1, &header2, nil, sourceBuffer);
+	free(sourceBuffer);
 }
 
 - (IBAction)sliderMoved:(id)sender{
@@ -344,8 +329,8 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 		char hideName[200], saveName[200],fileName[200], password[100];
 		
 		NSFilePath(hideDataFileName, hideName);
-		filePath("output.bmp", saveName);
-		filePath("write.bmp", fileName);
+		filePath((char*)"output.bmp", saveName);
+		filePath((char*)"write.bmp", fileName);
 		for(i = 0 ; i < [passwordField.text length]; i++)
 			password[i] = [passwordField.text characterAtIndex:i];
 		password[i] = '\0';
@@ -360,7 +345,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 			password[i] = [passwordField.text characterAtIndex:i];
 		password[i] = '\0';
 		
-		filePath("final.", saveName);
+		filePath((char*)"final.", saveName);
 		show(hideName, password, saveName, [lsbLabel.text intValue]);
 	}
 	
@@ -372,7 +357,7 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 	[self captureData:[[sender titleLabel] text]];
 }
 
-- (IBAction)getHidePicture:(id)sender{
+- (IBAction)getDataToHide:(id)sender{
 	coverImgae = NO;
 	
 	NSString *titleText = [[sender titleLabel] text];
@@ -509,27 +494,41 @@ void writeData(char *fileName,bmpfile_header *header1, BITMAPINFOHEADER *header2
 }
 
 - (IBAction)segmentMoved:(id)sender{
-	/*UISegmentedControl *seg = (UISegmentedControl*)sender;
+	UISegmentedControl *seg = (UISegmentedControl*)sender;
+	
 	switch ([seg selectedSegmentIndex]) {
 		case 1:
 			isHide = NO;
-			[UIView animateWithDuration:.3 animations:^{
-				[hideView setAlpha:0];
-				[lowerView setFrame:CGRectMake(hideView.frame.origin.x , hideView.frame.origin.y, lowerView.frame.size.width, lowerView.frame.size.height)];
-				[cameraButton setAlpha:0];
-			}];
+			
+			[self.navigationItem setRightBarButtonItem:nil animated:YES];
+			
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationDuration:0.3];
+			[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+			
+			[hideView setAlpha:0];
+			[lowerView setFrame:CGRectMake(hideView.frame.origin.x , hideView.frame.origin.y, lowerView.frame.size.width, lowerView.frame.size.height)];
+			[cameraButton setAlpha:0];
+			
+			[UIView commitAnimations];
 			break;
 		case 0:
 			isHide = YES;
-			[UIView animateWithDuration:.3 animations:^{
-				[hideView setAlpha:1];
-				[lowerView setFrame:CGRectMake(18 , 195, lowerView.frame.size.width, lowerView.frame.size.height)];
-				[cameraButton setAlpha:1];
-			}];
+			[self.navigationItem setRightBarButtonItem:mailButton animated:YES];
+			
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationDuration:0.3];
+			[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+			
+			[hideView setAlpha:1];
+			[lowerView setFrame:CGRectMake(18 , 225, lowerView.frame.size.width, lowerView.frame.size.height)];
+			[cameraButton setAlpha:1];
+			
+			[UIView commitAnimations];
 			break;
 		default:
 			break;
-	}*/
+	}
 }
 
 
